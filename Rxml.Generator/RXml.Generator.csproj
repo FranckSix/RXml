@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+   <PropertyGroup>
+      <TargetFramework>netstandard2.0</TargetFramework>
+      <LangVersion>latest</LangVersion>
+      <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+      <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+      <IncludeBuildOutput>false</IncludeBuildOutput>
+   </PropertyGroup>
+
+   <PropertyGroup>
+      <PackageId>RXml.Generator</PackageId>
+      <Product>RXML</Product>
+      <Version>1.0.0</Version>
+      <PackageVersion>$(Version)</PackageVersion>
+      <Authors>FranckSix</Authors>
+      <PackageProjectUrl>https://github.com/FranckSix/RXml</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/FranckSix/RXml</RepositoryUrl>
+      <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+      <Description>A code generator for .json resources files</Description>
+      <PackageReadmeFile>docs/README.md</PackageReadmeFile>
+      <PackageTags>JsonResourceGenerator, analyzers, source generator, net8, blazor, Localizer, json, Resources, asp.net</PackageTags>
+      <NoPackageAnalysis>true</NoPackageAnalysis>
+      <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+      <PackageLicenseExpression>MIT</PackageLicenseExpression>
+   </PropertyGroup>
+
+   <ItemGroup>
+     <Compile Include="..\RXml.Abstraction\Model\Resource.cs" Link="Abstraction\Resource.cs" />
+     <Compile Include="..\Rxml.Abstraction\Model\Resources.cs" Link="Abstraction\Resources.cs" />
+     <Compile Include="..\RXml.Abstraction\Model\Value.cs" Link="Abstraction\Value.cs" />
+     <Compile Include="..\RXml.Abstraction\XmlResourceSerializer.cs" Link="Abstraction\XmlResourceSerializer.cs" />
+   </ItemGroup>
+
+   <ItemGroup>
+      <Content Include="docs\README.md" Pack="true" PackagePath="docs/" />
+      <None Include="$(OutputPath)\RXml.Generator.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+   </ItemGroup>
+
+
+   <ItemGroup>
+      <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.10.0" PrivateAssets="all" />
+      <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" PrivateAssets="all" />
+   </ItemGroup>
+
+
+   <ItemGroup>
+     <Folder Include="Abstraction\" />
+   </ItemGroup>
+
+</Project>

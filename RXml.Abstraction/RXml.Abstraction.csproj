@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+   <PropertyGroup>
+      <TargetFramework>netstandard2.0</TargetFramework>
+      <LangVersion>latest</LangVersion>
+      <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+   </PropertyGroup>
+
+   <PropertyGroup>
+      <PackageId>RXml.Abstraction</PackageId>
+      <Product>RXML</Product>
+      <Version>1.0.0</Version>
+      <PackageVersion>$(Version)</PackageVersion>
+      <Authors>FranckSix</Authors>
+      <PackageProjectUrl>https://github.com/FranckSix/RXml</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/FranckSix/RXml</RepositoryUrl>
+      <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+      <Description>A code generator for .json resources files</Description>
+      <PackageReadmeFile>docs/README.md</PackageReadmeFile>
+      <PackageTags>JsonResourceGenerator, analyzers, source generator, net8, blazor, Localizer, json, Resources, asp.net</PackageTags>
+      <NoPackageAnalysis>true</NoPackageAnalysis>
+      <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+      <PackageLicenseExpression>MIT</PackageLicenseExpression>
+   </PropertyGroup>
+
+   <ItemGroup>
+      <Content Include="docs\README.md" Pack="true" PackagePath="docs/" />
+   </ItemGroup>
+
+   <ItemGroup>
+     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+   </ItemGroup>
+
+</Project>
