@@ -47,6 +47,7 @@ To overcome the fact that WebAssembly does not have access to the solution's Res
 	</ItemGroup>
 	```
 	**AdditionalFiles** - For the Code générator to générate constants classes
+  
 	**EmbeddedResource** - For ILocalisationService can consume resource file
  
 ## Add Interface service in App
