@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RXml.Abstraction", "RXml.Ab
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RXml.Generator", "Rxml.Generator\RXml.Generator.csproj", "{7CD31010-862D-4E7B-890F-C95FC6E58B0F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RXmlExtension", "RXmlExtension\RXmlExtension.csproj", "{A313A25B-F49A-40BC-8C05-BDCC005AE2E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,12 @@ Global
 		{7CD31010-862D-4E7B-890F-C95FC6E58B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CD31010-862D-4E7B-890F-C95FC6E58B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CD31010-862D-4E7B-890F-C95FC6E58B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A313A25B-F49A-40BC-8C05-BDCC005AE2E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A313A25B-F49A-40BC-8C05-BDCC005AE2E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A313A25B-F49A-40BC-8C05-BDCC005AE2E4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A313A25B-F49A-40BC-8C05-BDCC005AE2E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A313A25B-F49A-40BC-8C05-BDCC005AE2E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A313A25B-F49A-40BC-8C05-BDCC005AE2E4}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
