@@ -89,7 +89,7 @@ internal class RXmlDiagnosticsServices : DisposableObject
 
    private async Task InitializeAsync()
    {
-      _outputWindow = await _extensibility.Views().Output.GetChannelAsync(nameof(ExtensibilityPoint) + Guid.NewGuid(), new string("%RXmlExtension.OpenRXmlEditorCommand.DisplayName%"), default);
+      _outputWindow = await _extensibility.Views().Output.GetChannelAsync(nameof(ExtensibilityPoint) + Guid.NewGuid(), "%RXmlExtension.OpenRXmlEditorCommand.DisplayName%", default);
       Assumes.NotNull(_outputWindow);
 
       _diagnosticsReporter = _extensibility.Languages().GetDiagnosticsReporter(nameof(ExtensionEntrypoint));
